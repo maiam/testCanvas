@@ -57,6 +57,11 @@ h1 {
   background-color: #ffffff;
   color: black;
 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #canvas {
@@ -81,15 +86,14 @@ h1 {
 }
 
 .prevent-select {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-}
 
-img {  
-  user-select: none;
-  -moz-user-select: none;
+  -moz-user-select: none; /* Mozila */
+  -moz-user-drag: none;
+  -webkit-user-select: none; /* Safari */
   -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  -ms-user-drag: none;
+
+  user-select: none; /* Standard syntax */
+  
 }
